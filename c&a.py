@@ -115,7 +115,7 @@ if not st.session_state.finished:
                     st.session_state.score += 1
                 st.session_state.answered_correctly = True
                 st.balloons()
-                st.button(f"✅ {option}", key=f"correct_{option}", type="primary")
+                st.success(f"✅ {option} est correct ")
                 st.success(f"Correct ! ✨")
                 st.rerun()
             else:
